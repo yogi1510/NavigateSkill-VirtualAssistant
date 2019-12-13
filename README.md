@@ -1,9 +1,8 @@
 ## About
 Testing Mycroft skill development - navigates from office to home
 ## Examples
-* "home"
-* "navigate home"
-* "navigation"
+* "navigate from place1 to place2"
+* "what is the distance from place1 to place2"
 
 ## Credits
 Mycroft AI (@MycroftAI)
@@ -14,3 +13,4 @@ Mycroft AI (@MycroftAI)
 ## Tags
 #navigate
 #navigation
+#direction
