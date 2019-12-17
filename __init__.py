@@ -13,6 +13,9 @@ class NavigateSkill(MycroftSkill):
     def initialize(self):
         self.register_intent_file('navigate.from.intent', self.handle_navigate_from)
         #self.register_intent_file('do.you.like.intent', self.handle_do_you_like)
+        self.register_entity_file('place1.entity')
+        self.register_entity_file('place2.entity')
+        
         my_setting = self.settings.get('my_setting')
     def handle_navigate_from(self, message):
         
