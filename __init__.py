@@ -26,8 +26,10 @@ class NavigateSkill(MycroftSkill):
     
         
         
-        place1 = message.data["place1"]
-        place2 = message.data["place2"]
+        place1 = message.data.get("place1")
+        place2 = message.data.get("place2")
+        print(place1)
+        print(place2)
         
         """
         url='https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+place1+'&destinations='+place2+'&key=AIzaSyBpfgcCEAI_cnJB2yAtT7xw2m2Ci-e6vc0'
