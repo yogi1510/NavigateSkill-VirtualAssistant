@@ -36,10 +36,12 @@ class NavigateSkill(MycroftSkill):
         di=distance['text']
         du=duration['text']
         
-        self.log.info("There are five types of log messages: "
-                      "info, debug, warning, error, and exception.")
+        
         self.speak_dialog("navigation.to",{"distance":di})
         self.speak_dialog("time",{"duration":du})
+        self.log.info("There are five types of log messages: "
+                      "info, debug, warning, error, and exception.")
+        
         
     def stop(self):
         pass
