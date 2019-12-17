@@ -39,6 +39,8 @@ class NavigateSkill(MycroftSkill):
         
         self.speak_dialog("navigation.to",{"distance":di})
         self.speak_dialog("time",{"duration":du})
+        self.speak_dialog(place1)
+        self.speak_dialog(place2)
         self.log.info("There are five types of log messages: "
                       "info, debug, warning, error, and exception.")
         
