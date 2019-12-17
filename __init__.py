@@ -29,12 +29,12 @@ class NavigateSkill(MycroftSkill):
         
         output=json_output['rows']
         
-        elements = output['elements']
-        distance = elements['distance']
-        duration = elements['duration']
+        elements = output[0]['elements']
+        distance = elements[0]['distance']
+        duration = elements[0]['duration']
         
-        di=distance[0]['text']
-        du=duration[0]['text']
+        di=distance['text']
+        du=duration['text']
         
         self.log.info("There are five types of log messages: "
                       "info, debug, warning, error, and exception.")
