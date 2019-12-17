@@ -17,12 +17,18 @@ class NavigateSkill(MycroftSkill):
         self.register_entity_file('place2.entity')
         
         my_setting = self.settings.get('my_setting')
+        
+    @intent_file_handler("navigate.from.intent")
     def handle_navigate_from(self, message):
         
         
+  
+    
         
-        place1=message.data["place1"]
-        place2=message.data["place2"]
+        
+        place1 = message.data["place1"]
+        place2 = message.data["place2"]
+        
         """
         url='https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+place1+'&destinations='+place2+'&key=AIzaSyBpfgcCEAI_cnJB2yAtT7xw2m2Ci-e6vc0'
         print(url)
