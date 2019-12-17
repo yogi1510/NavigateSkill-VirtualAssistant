@@ -23,6 +23,7 @@ class NavigateSkill(MycroftSkill):
         
         place1=message.data.get('place1')
         place2=message.data.get('place2')
+        """
         url='https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+place1+'&destinations='+place2+'&key=AIzaSyBpfgcCEAI_cnJB2yAtT7xw2m2Ci-e6vc0'
         print(url)
         r = requests.get(url)
@@ -41,7 +42,7 @@ class NavigateSkill(MycroftSkill):
         
         
         self.speak_dialog("navigation.to",{"distance":di})
-        self.speak_dialog("time",{"duration":du})
+        self.speak_dialog("time",{"duration":du}) """
         self.speak_dialog(place1)
         self.speak_dialog(place2)
         self.log.info("There are five types of log messages: "
