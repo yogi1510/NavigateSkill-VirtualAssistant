@@ -18,7 +18,7 @@ class NavigateSkill(MycroftSkill):
         
         my_setting = self.settings.get('my_setting')
         
-    @intent_file_handler("navigate.from.intent")
+    #@intent_file_handler("navigate.from.intent")
     def handle_navigate_from(self, message):
         
         
